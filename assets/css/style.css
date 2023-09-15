@@ -1,0 +1,96 @@
+body { /* Aplica a todo el body*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+#btn_centro{
+    text-align: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente los elementos en la columna */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e2e1dc;
+}
+
+.form-container {
+    background-color: #eb647a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+
+/* Establece el margen entre los cards */
+.card {
+    margin: 10px; /* Puedes ajustar el valor según tu preferencia */
+    border-radius:20px;
+    box-shadow: pink;
+}
+
+/* Crea una cuadrícula con tres columnas y tres filas */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de tamaño igual */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas de tamaño igual */
+    gap: 20px; /* Espacio entre los cards */
+    border-radius:20px;
+    box-shadow: #eb647a;
+    
+}
+
+.title-list{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #be0480b2;
+}
+
+#cardNota {
+    min-height: 250px;
+    
+}
+
+.card-body {
+    background-color:#eb647a;
+    border-radius:20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container {
+    box-shadow: pink;
+}
+
+#listaNotas{
+    background-color: #e2e1dc;
+}
+
+#enviar{
+    background-color: #b38add;
+    border-color: #b38add;
+
+}
+
+.btnEnviar {
+    text-align: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente los elementos en la columna */
+}

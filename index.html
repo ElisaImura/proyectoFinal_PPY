@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
     <title>Notas</title>
 </head>
 <body>
@@ -11,23 +14,61 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="col-8">
-                    <a class="navbar-brand" href="#">Navbar w/ text</a>
+                    <img src="/assets/img/note-sticky-solid.svg">
+                    <a class="navbar-brand"><i class='fas fa-sticky-note' style='font-size:36px;'></i> Notas</a>
                 </div>
                 <div class="col-6">
-                    <span class="navbar-text">
-                        Navbar text with an inline element
-                    </span>
+                    <div class="row">
+                        <div class="col-2">
+                            <a class="item" id="irNotas">Ver Notas</a>
+                        </div>
+                        <div class="col-3" id="btn_centro">
+                            <a class="item" id="irNuevo">Agregar Nota</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="./calendar/index.html" class="item" id="calendario">Calendario</a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </nav>
     </header>
-
-    <div class="container">
-
+    
+    <div class="nuevaNota" id="nuevaNota">
+        <div class="center-container">
+            <div class="form-container">
+                <h1>Agregar Nueva Nota</h1>
+                <form id="formulario-nota">
+                    <div class="mb-3">
+                      <label for="title" class="form-label">Título</label>
+                      <input type="text" class="form-control" id="title" name="title">
+                    </div>
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="comment"></textarea>
+                      <label for="floatingTextarea">Comentarios</label>
+                    </div>
+                    <div class="btnEnviar">
+                        <button type="submit" class="btn mt-3" id="enviar">Agregar Nota</button>
+                    </div>
+                    
+                  </form>                  
+            </div>
+        </div>
+    </div>
+    
+    <div class="listaNotas" id="listaNotas">
+        <div  class="title-list">
+            <h1 style="color: #3D3C42;">Lista de Notas</h1>
+        </div>
+        
+        <div class="container">
+            <div class="row" id="notasItems">
+                
+            </div>
+        </div>
     </div>
 
-    <footer>
-
-    </footer>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 </html>
