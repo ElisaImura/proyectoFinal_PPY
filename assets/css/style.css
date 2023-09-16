@@ -13,7 +13,6 @@ body { /* Aplica a todo el body*/
     justify-content: center;
     align-items: center;
     height: 91vh;
-    background-color: #e2e1dc;
 }
 
 .form-container {
@@ -81,7 +80,7 @@ a:hover {
 }
 
 #listaNotas{
-    background-color: #e2e1dc;
+    margin-top: 30px;
 }
 
 #enviar{
