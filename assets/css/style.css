@@ -12,7 +12,7 @@ body { /* Aplica a todo el body*/
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 91vh;
     background-color: #e2e1dc;
 }
 
@@ -94,3 +94,9 @@ a:hover {
     text-align: center; /* Centra horizontalmente el contenido */
     justify-content: center; /* Centra verticalmente los elementos en la columna */
 }
+
+.derecha_container{
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+  }
